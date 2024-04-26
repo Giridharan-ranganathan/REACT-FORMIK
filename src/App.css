@@ -1,0 +1,112 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  place-items: center;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.border-card{
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 293px;
+  /* height: 306px; */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fot{
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* ------------------------- */
+
+.card:hover {
+  transform: translateY(-50px);
+}
+.card {
+  position: relative;
+  width: 280px;
+  min-height: 200px !important; 
+  /* padding: 10px; */
+  box-sizing:content-box;
+  border: 1px solid black;
+  box-shadow: 4px 0px 8px rgba(0, 0, 0, 2.1) !important;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%) !important;
+  transition: transform 0.3s ease !important;
+  /* clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%) !important; */
+  
+  > .card-header {
+    width: 100%;
+    height: 300px;
+    /* background-color: lightgreen; */
+    /* border-radius: 20px !important; */
+
+    > img {
+      width: 100%;
+      height: 300px;
+      border-radius: 10px !important;
+      background-color: white !important;
+    }
+  }
+
+  > .card-body {
+    > .product_name {
+      height: 100px;
+      text-align: center;
+      margin-top: 50px;
+    }
+    > .product_description {
+      text-align: end;
+      font-weight: 700;
+      font-size: x-large;
+      color: gray;
+    }
+    > .product_price {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: gray;
+    }
+  }
+}
+
+.demo {
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* background-color: antiquewhite; */
+}
+
+.page-header{
+  text-align: center;
+}
+
+.page-header-title{
+  font-style: italic;
+  color: gray;
+}
+
+/* book  */
+ .book-code{
+  text-align: end;
+  font-weight: 600;
+  font-size: xx-small;
+ }
+
+ .book-date{
+  text-align: end;
+  font-weight: 600;
+  font-size: xx-small;
+ }
+
+ .erroralert{
+  color: lightcoral;
+ }
